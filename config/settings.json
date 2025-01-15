@@ -1,0 +1,26 @@
+{
+    "projects": {
+        "Multi_Joueur": {
+            "dependencies": [],
+            "dependents": [],
+            "guid": "2E4917C5-74D1-675E-3017-7C814C74023C",
+            "lib": false,
+            "pch": true,
+            "vcpkg": true,
+            "window": true
+        },
+        "Reseau_Server": {
+            "dependencies": [],
+            "dependents": [],
+            "guid": "7A194172-4D6B-25DF-0018-7CA003A35E39",
+            "lib": false,
+            "pch": true,
+            "vcpkg": true,
+            "window": true
+        }
+    },
+    "solution_guid": "75FA47FB-41DC-0CBD-2A00-22322C994B9F",
+    "solution_name": "Multi_Joueur",
+    "startup_project": "Multi_Joueur",
+    "version": "1.17.3"
+}
