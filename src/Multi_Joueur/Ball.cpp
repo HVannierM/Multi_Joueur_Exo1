@@ -15,11 +15,16 @@ void Ball::Move(float Dt) {
 }
 
 void Ball::Check_Collision(int _width, int _height) {
-	if (mShape.getPosition().x - mRadius < 0 || mShape.getPosition().x + mRadius > _width) {
-		mDirection.x *= -1;
-	}
-	if (mShape.getPosition().y - mRadius < 0 || mShape.getPosition().y + mRadius > _height) {
-		mDirection.y *= -1;
-	}
+    const auto position = mShape.getPosition();
+    const float left = position.x - mRadius;
+    const float right = position.x + mRadius;
+    const float top = position.y - mRadius;
+    const float bottom = position.y + mRadius;
 
+    if (left < 0 || right > _width) {
+        mDirection.x *= -1;
+    }
+    if (top < 0 || bottom > _height) {
+        mDirection.y *= -1;
+    }
 }

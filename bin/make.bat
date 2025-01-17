@@ -1,2 +1,2 @@
 cd ../..
-SolutionGen.exe -make Multi_Joueur_Exo
+SolutionGen.exe -make Multi_Joueur_Exo1
